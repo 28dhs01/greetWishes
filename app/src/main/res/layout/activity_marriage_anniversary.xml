@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".marriageAnniversary">
+    tools:context=".marriageAnniversary"
+
+
+    >
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,12 +21,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:textColor="#663a82"
         android:textAlignment="center"
         android:textSize="50sp"
         android:textStyle="bold|italic"
         android:fontFamily="cursive"
+
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
