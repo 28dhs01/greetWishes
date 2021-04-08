@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".marriageAnniversary"
+    tools:context=".MarriageAnniversary"
 
 
     >
@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/flw"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription" />
     <TextView
         android:id="@+id/anniversaryGreeting"
         android:layout_width="wrap_content"

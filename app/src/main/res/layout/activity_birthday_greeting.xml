@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".birthdayGreeting">
+    tools:context=".BirthdayGreeting">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/cupcake"
-        />
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/birthdayGreeting"

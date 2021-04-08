@@ -9,10 +9,10 @@
 
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/nameInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="enter name whom you want to wish"
+        android:hint="@string/enter_name_whom_you_want_to_wish"
         android:textColor="#333333"
         android:textAlignment="center"
         android:textColorHint="#333333"
@@ -21,7 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="50dp"
-
         />
     <Button
         android:id="@+id/birthdayButton"
@@ -29,9 +28,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/nameInput"
         android:layout_marginTop="50dp"
-        android:text="           birthday card           "
+        android:text="@string/birthday_card"
         android:textColor="@color/white"
         android:padding="40dp"
 
@@ -45,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/birthdayButton"
         android:layout_marginTop="50dp"
-        android:text="Wedding Anniversary Card"
+        android:text="@string/wedding_anniversary_card"
         android:textColor="@color/white"
         android:padding="40dp"
 

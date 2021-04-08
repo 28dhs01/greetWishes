@@ -2,5 +2,8 @@
     <string name="app_name">RepublicGreet</string>
     <string name="enter_name">enter name</string>
     <string name="create_birthday_card">create birthday card</string>
-    <string name="birthday_card">birthday card</string>
+    <string name="birthday_card">          birthday card          </string>
+    <string name="enter_name_whom_you_want_to_wish">enter name whom you want to wish</string>
+    <string name="wedding_anniversary_card">Wedding Anniversary Card</string>
+    <string name="content_description_anniversary">flower</string>
 </resources>

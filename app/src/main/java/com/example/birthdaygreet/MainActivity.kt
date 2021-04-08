@@ -3,7 +3,6 @@ package com.example.birthdaygreet
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,19 +12,31 @@ class MainActivity : AppCompatActivity() {
 
 
         birthdayButton.setOnClickListener{
-            val Name = name.editableText.toString()
-            if(Name.isNotEmpty()) {
-                val intent = Intent(this, birthdayGreeting::class.java)
-                intent.putExtra(birthdayGreeting.NAME_EXTRA, Name)
+            val name = nameInput.editableText.toString()
+
+            //to make sure user must enters a name
+            if(name.isNotEmpty()) {
+                // move from main activity to birthday activity
+                val intent = Intent(this, BirthdayGreeting::class.java)
+
+                // name needs to be passed from main activity to birthday activity
+                intent.putExtra(BirthdayGreeting.NAME_EXTRA, name)
+
+                // to launch birthday activity
                 startActivity(intent)
             }
         }
 
         anniversaryButton.setOnClickListener{
-            val Name = name.editableText.toString()
-            if(Name.isNotEmpty()) {
-                val intent = Intent(this, marriageAnniversary::class.java)
-                intent.putExtra(marriageAnniversary.NAME_EXTRA, Name)
+            val coupleName = nameInput.editableText.toString()
+            if(coupleName.isNotEmpty()) {
+                // move from main activity to anniversary activity
+                val intent = Intent(this, MarriageAnniversary::class.java)
+
+                // coupleName needs to be passed from main activity to anniversary activity
+                intent.putExtra(MarriageAnniversary.COUPLE_NAME_EXTRA, coupleName)
+
+                // to launch anniversary activity
                 startActivity(intent)
             }
         }
