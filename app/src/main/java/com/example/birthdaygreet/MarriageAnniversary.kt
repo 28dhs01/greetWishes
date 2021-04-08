@@ -7,6 +7,7 @@ import java.util.jar.Attributes
 
 class MarriageAnniversary : AppCompatActivity() {
 
+    // companion objects are same like that of static variables
     companion object{
         const val COUPLE_NAME_EXTRA = "couple_name_extra"
     }
